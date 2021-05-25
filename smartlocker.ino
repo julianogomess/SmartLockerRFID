@@ -14,9 +14,9 @@ int val = 0;
 MFRC522 mfrc522(SS_PIN, RST_PIN);   
 
 //Definição do wifi
-const char* ssid = "Renata Casa";
-const char* password = "belavista";
-const char* mqtt_server = "broker.mqtt-dashboard.com";
+const char* ssid = "nome do wifi";
+const char* password = "senha do wifi";
+const char* mqtt_server = "broker.mqtt-dashboard.com"; // broker da sua escolha
 WiFiClient espClient;
 PubSubClient client(espClient);
 
