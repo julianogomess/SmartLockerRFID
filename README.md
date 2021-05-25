@@ -3,8 +3,8 @@
 
 ### Breve descrição
 Projeto de uma fechadura eletrônica com leitura RFID e integração MQTT.
-O projeto monitora e aciona uma fechadura elétrica. O monitoramento é feito via dashboard do Node-RED com auxilio do MQTT, assim consta o estado da porta, o estado da fechadura e o que o leitor rfid esta esperando. A ação de desbloquear a fechadura pode ser feita de duas formas, uma através de botão no dashboard ou através de cartão NFC autorizado.
-O cadastro de cartões é autorizado pelo dashboard.
+O projeto monitora e aciona uma fechadura elétrica. O monitoramento é feito via dashboard do Node-RED com auxilio do MQTT, assim consta o estado da porta, o estado da fechadura e o estado total do sistema. A ação de desbloquear a fechadura pode ser feita de duas formas, uma através de botão no dashboard ou através de cartão NFC autorizado.
+O cadastro de cartões é autorizado pelo dashboard através de um botão que faz com que o próximo cartão lido seja cadastrado. 
 
 
 ### Componentes
@@ -18,6 +18,7 @@ O cadastro de cartões é autorizado pelo dashboard.
 
 [A montagem dos componentes esta aqui](images/montagem.png)
 <img src="images/montagem.png" alt="Montagem"/>
+O microcontrolador é responsável por conectar todos os outros módulos, o sensor MC-38 retorna o estado da porta, se está fechada ou aberta. O módulo relé e a fonte de 12V são necessários para acionar a fechadura. O leitor RFID faz a leitura dos cartões NFC. 
 
 ### Software 
 O fluxograma abaixo representa o que o sistema está esperando para assim tomar sua decisão.
