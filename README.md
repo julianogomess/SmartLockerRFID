@@ -100,3 +100,9 @@ if (!client.connected()) {
  <img src="images/NodeRed.png" alt="Node"/>
  
  [Para acessar o conjutos dos nós no node](nodeSmartLocker.json) 
+
+
+### Dashboard
+O [dashboard](images/dashboard.png) utilizado no Node-RED está na imagem abaixo, o botão cadastra cartão é responsável por indicar que o próximo cartão lido será cadastrado e o status acima indica se foi ocrrido. Do outro lado as 3 primeiras linhas mostram a ultima ação do sistema, o estado da porta e o estado da fechadura respectivamente e o botão abaixo abre a fechadura por 4 segundos.
+
+Os nós e seus respectivos tópicos podem ser vistos [aqui](images/dashboard.png). 
